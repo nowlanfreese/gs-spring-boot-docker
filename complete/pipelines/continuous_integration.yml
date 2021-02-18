@@ -77,4 +77,4 @@ pipelines:
             - name: git
         execution:
           onExecute:
-            - 'curl -H "Authorization: token ${int_my_github_token}" ${int_my_github_url}/rate_limit'
+            - 'curl -H "Authorization: token ${int_git_token}" ${int_git_url}/rate_limit'
